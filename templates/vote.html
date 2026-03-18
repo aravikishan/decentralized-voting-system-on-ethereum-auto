@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Voting System</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/vote">Vote</a></li>
+                <li class="nav-item"><a class="nav-link" href="/results">Results</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/admin">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <h1>Cast Your Vote</h1>
+        <form id="voteForm" novalidate>
+            <div class="form-group">
+                <label for="candidate">Select Candidate:</label>
+                <select class="form-control" id="candidate" name="candidate">
+                    <!-- Candidates will be populated here -->
+                </select>
+                <div class="invalid-feedback">Please select a candidate.</div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Vote</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Decentralized Voting System</p>
+    </footer>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
